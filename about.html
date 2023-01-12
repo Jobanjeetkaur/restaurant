@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home :: Restaurant</title>
+
+    <meta name="Description" content="A wonderful beauty site built for Code The Web 2. Visit us in store or online">
+
+    <meta name="Keywords" content="Breakfast, lunch, dinner, Yummy meals">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.png">
+
+    <!-- RESET -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- SITE STYLES -->
+    <link rel="stylesheet" href="css/restaurant-styles.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+
+
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- FLEXSLIDER CSS AND JS -->
+
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <script src="js/jquery.flexslider.js"></script>
+    <!-- SLICKNAV - CSS + JS -->
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery.slicknav.js"></script>
+
+
+
+    <!-- HOOKUP -->
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                slideshowSpeed: 3000,
+                randomize: true
+
+            }); //END FLEXSLIDER
+        }); //END WINDOW
+
+    </script>
+
+    <!-- HOOKUP - TESTIMONIALS -->
+    <script>
+        $(window).load(function() {
+            $('.flextestimonials').flexslider({
+                slideshowSpeed: 10000
+            });
+        });
+
+    </script>
+
+
+    <!-- SLICKNAV HOOKUP -->
+    <script>
+        $(function() {
+            $('#menu').slicknav({
+                label: "",
+                closeOnClick: true
+
+
+            });
+        });
+
+    </script>
+    <!-- SUPERFISH DROPDOWN MENUS -->
+    <link href="css/superfish.css" rel="stylesheet">
+    <script src="js/superfish.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('ul.sf-menu').superfish({
+                delay: 1000,
+                animation: {
+                    opacity: 'show',
+                    height: 'show'
+                },
+                speed: 'fast',
+                autoArrows: false
+            });
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            $('#menu').slicknav({
+                label: '',
+                prependTo: 'nav'
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <ul class="sf-menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#"> Events</a>
+                <ul>
+                    <li><a href="#wedding">Wedding</a>
+                        <ul>
+                            <li><a href="event.html">30 people</a></li>
+                            <li><a href="#">50 people</a></li>
+                            <li><a href="#">75 people</a></li>
+                            <li><a href="#">100 people</a></li>
+                            <li><a href="#">120 people</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#corporate">Corporate Events</a>
+                        <ul>
+                            <li><a href="event.html">30 people</a></li>
+                            <li><a href="#">50 people</a></li>
+                            <li><a href="#">75 people</a></li>
+                            <li><a href="#">100 people</a></li>
+                            <li><a href="#">120 people</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#birthday">Birthday Parties</a>
+                        <ul>
+                            <li><a href="event.html">30 people</a></li>
+                            <li><a href="#">50 people</a></li>
+                            <li><a href="#">75 people</a></li>
+                            <li><a href="#">100 people</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="menu.html">Menu</a>
+                <ul>
+                    <li><a href="menu.html">Street Food</a></li>
+                    <li><a href="#appetizer">Appetizer</a></li>
+                    <li><a href="#mainCourse">Main Course</a></li>
+                    <li><a href="#dessert">Dessert</a></li>
+                    <li><a href="#">Non Veg</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html" class="current">About Us</a>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="#tour">Tour</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="#map">Find Us</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ==== HEADER==== -->
+    <header id="header">
+        <section id="mainHeader" class="hero1">
+            <!-- LOGO -->
+            <img src="images/logo.jpg" class="logo" alt="logo">
+            <h1>Welcome to Yum Yum</h1>
+            <p>A taste you will remember</p>
+            <br>
+            <a href="#header" id="button">ORDER ONLINE</a>
+        </section>
+
+    </header>
+
+
+    <main class="container">
+
+        <section id="about">
+            <h1>About</h1>
+            <div class="row gap20 space">
+                <section class="col12">
+                    <h2>30 Years Of Experience</h2>
+                    <img src="images/experience.jpg" alt="experience" class="responsive shadowed">
+                </section>
+
+                <section class="col12">
+                    <p><strong>Indulge</strong> yourself in a pristine setting, presenting you the unapproachable splendor of the empyrean. Take advantage of the seamless fine dining experience you have not experienced anywhere else. Located in the beautiful historic house of Walter E. Calvert, Yum Yum is an immaculate destination for every occasion of your life.
+                    </p>
+                </section>
+            </div>
+        </section>
+
+
+        <section id="tour" class="responsive space">
+            <h2>Tour</h2>
+            <div class="embed-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/C0mwQjfsIZ8?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <!--  FOOTER -->
+
+    <footer id="footer">
+
+
+
+
+        <!--  SOCIAL ICONS -->
+        <div class="social-icons shadow">
+            <a href="#"><i class="fab fa-facebook-f circle"></i> <span class="position">Facebook</span></a>
+            <a href="#"><i class="fab fa-twitter circle"></i> <span class="position">Twitter</span></a>
+            <a href="#"><i class="fab fa-google-plus-g circle"></i> <span class="position">Google+</span>
+            </a> <a href="#"> <i class="fab fa-linkedin-in circle"></i> <span class="position">LinkedIn</span></a>
+        </div>
+        <p>&copy;2030 All Rights Reserved. </p>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>

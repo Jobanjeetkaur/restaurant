@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home :: Restaurant</title>
+
+    <meta name="Description" content="A wonderful beauty site built for Code The Web 2. Visit us in store or online">
+
+    <meta name="Keywords" content="Breakfast, lunch, dinner, Yummy meals">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.png">
+
+    <!-- RESET -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- SITE STYLES -->
+    <link rel="stylesheet" href="css/restaurant-styles.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- FLEXSLIDER CSS AND JS-->
+
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="js/jquery.flexslider.js"></script>
+
+    <!-- SLICKNAV - CSS + JS -->
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery.slicknav.js"></script>
+
+    <!-- HOOKUP -->
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                slideshowSpeed: 3000,
+                randomize: true
+
+            }); //END FLEXSLIDER
+        }); //END WINDOW
+
+    </script>
+
+    <!-- HOOKUP - TESTIMONIALS -->
+    <script>
+        $(window).load(function() {
+            $('.flextestimonials').flexslider({
+                slideshowSpeed: 10000
+            });
+        });
+
+    </script>
+
+
+    <!-- SLICKNAV HOOKUP-->
+    <script>
+        $(function() {
+            $('#menu').slicknav({
+                label: "",
+                closeOnClick: true
+            });
+        });
+
+    </script>
+    <!-- SUPERFISH DROPDOWN MENUS -->
+    <link href="css/superfish.css" rel="stylesheet">
+    <script src="js/superfish.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('ul.sf-menu').superfish({
+                delay: 1000,
+                animation: {
+                    opacity: 'show',
+                    height: 'show'
+                },
+                speed: 'fast',
+                autoArrows: false
+            });
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            $('#menu').slicknav({
+                label: '',
+                prependTo: 'nav'
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <nav id="nav">
+            <ul class="sf-menu" id="menu">
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="event.html"> Events</a>
+                    <ul>
+                        <li><a href="#wedding">Wedding</a>
+                            <ul>
+                                <li><a href="event.html">30 people</a></li>
+                                <li><a href="#">50 people</a></li>
+                                <li><a href="#">75 people</a></li>
+                                <li><a href="#">100 people</a></li>
+                                <li><a href="#">120 people</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#corporate">Corporate Events</a>
+                            <ul>
+                                <li><a href="#">30 people</a></li>
+                                <li><a href="#">50 people</a></li>
+                                <li><a href="#">75 people</a></li>
+                                <li><a href="#">100 people</a></li>
+                                <li><a href="#">120 people</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#birthday">Birthday Parties</a>
+                            <ul>
+                                <li><a href="#">30 people</a></li>
+                                <li><a href="#">50 people</a></li>
+                                <li><a href="#">75 people</a></li>
+                                <li><a href="#">100 people</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="menu.html">Menu</a>
+                    <ul>
+                        <li><a href="menu.html">Street Food</a></li>
+                        <li><a href="#appetizer">Appetizer</a></li>
+                        <li><a href="#mainCourse">Main Course</a></li>
+                        <li><a href="#dessert">Dessert</a></li>
+                        <li><a href="#">Non Veg</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#tour">Tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#map">Find Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- ==== HEADER==== -->
+        <header id="header">
+            <section id="mainHeader" class="hero">
+                <!-- LOGO -->
+                <img src="images/logo.jpg" alt="logo" class="logo">
+                <h1>Welcome to Yum Yum</h1>
+                <p>A taste you will remember</p>
+                <br>
+                <a href="#header" id="button">ORDER ONLINE</a>
+            </section>
+        </header>
+
+        <div class="bgwhite">
+
+            <section id="section1" class="container">
+                <h1>Our Special Wine</h1>
+                <div class="row gap20 space">
+                    <section class="col12">
+                        <img src="images/food.jpg" alt="interior 2" class="responsive">
+                    </section>
+
+                    <section class="col12">
+
+                        <p><em>These</em> Barbaresco wines are often light in color, but filled with tart berry flavors mixed with flavors of dry earth, spices, and potpourri.</p>
+                        <br>
+                        <p><em>The</em> Nebbiolo grape produces powerful wines. The wines from Barbaresco are its most feminine and elegant, but they can be as exciting and exhilarating as their neighboring Barolo wines.</p>
+                        <br>
+                        <p><em>These</em> wines have high acidity and tannin, so they are best after a couple years of aging. Once they get a few years in bottle, they reveal invigorating aromas of tart cranberries and cherries, cardamom, potpourri, and dry earth. They are generally a lighter reddish orange in color, but they are not light on flavor.</p>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- FLEXSLIDER -->
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="images/flex1.jpg" alt="photo of pie">
+                </li>
+                <li>
+                    <img src="images/flex2.jpg" alt="special spices">
+                </li>
+                <li>
+                    <img src="images/flex3.jpg" alt="special spices">
+                </li>
+            </ul>
+        </div>
+
+        <!-- FOOD GALLERY -->
+
+        <div class="bgwhite">
+            <section id="gallery" class="container">
+                <h1>Our Food Gallery</h1>
+                <div class="row gap20 space">
+                    <section class="col16">
+                        <img src="images/gallery1.jpg" alt="pasta" class="responsive shadowed zoom">
+                    </section>
+
+                    <section class="col16 responsive">
+                        <img src="images/gallery2.jpg" alt="salad" class="responsive shadowed down zoom">
+                    </section>
+                    <section class="col16 responsive">
+                        <img src="images/gallery3.jpg" alt="momos" class="responsive shadowed zoom">
+                    </section>
+                    <section class="col16 responsive">
+                        <img src="images/gallery4.jpg" alt="creamy pasta" class="responsive shadowed down zoom">
+                    </section>
+                    <section class="col16 responsive">
+                        <img src="images/gallery5.jpg" alt="sandwich" class="responsive shadowed zoom">
+                    </section>
+                    <section class="col16 responsive">
+                        <img src="images/gallery6.jpg" alt="avacado special" class="responsive shadowed down zoom">
+                    </section>
+                </div>
+            </section>
+        </div>
+
+
+
+        <div class="bgImg">&nbsp;</div>
+
+<!--  DELIVERY SECTION     -->
+           <div class="bgwhite">
+            <section id="delivery" class="container">
+                <h1>Delivery Options</h1>
+                <div class="row space gap20">
+                    <section class="col13">
+                        <img src="images/doordash.jpg" alt="" class="responsive">
+                    </section>
+                    <section class="col13">
+                        <img src="images/uber1.jpg" alt="" class="responsive">
+                    </section>
+                    <section class="col13">
+                        <img src="images/skip.png" alt="" class="responsive">
+                    </section>
+                </div>
+            </section>
+            </div>
+            
+<!-- TESTIMONIALS -->
+        <section id="testimonials" class="container">
+            <h2>Testimonials </h2>
+            <div class="row">
+                <!-- 1/4 + 1/2 + 1/4 - TESTIMONIALS-->
+                <section class="col14">&nbsp;</section>
+                <section class="col12">
+                    <div class="flexslider flextestimonials">
+                        <ul class="slides">
+                            <li>
+                                <blockquote>
+                                    This is my absolute favorite restaurant in Toronto. The food is always fantastic and no matter what I order I am always delighted with my meal! Servers are also great and always efficient, happy and polite.
+                                    <span>- Joe</span>
+                                </blockquote>
+                            </li>
+
+                            <li>
+                                <blockquote>
+                                    This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.
+                                    <span>- Donnie</span>
+                                </blockquote>
+
+                            </li>
+
+
+                            <li>
+                                <blockquote>
+                                    It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.
+
+
+                                    <span>- Ann</span>
+                                </blockquote>
+
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="col14 fl">&nbsp;</section>
+                <div class="clear"></div>
+            </div>
+        </section>
+        
+        <!--  FOOTER -->
+        <footer id="footer">
+            <!--  SOCIAL ICONS-->
+            <div class="social-icons shadow">
+                <a href="#"><i class="fab fa-facebook-f circle"></i> <span class="position">Facebook</span></a>
+                <a href="#"><i class="fab fa-twitter circle"></i> <span class="position">Twitter</span></a>
+                <a href="#"><i class="fab fa-google-plus-g circle"></i> <span class="position">Google+</span>
+                </a> <a href="#"> <i class="fab fa-linkedin-in circle"></i> <span class="position">LinkedIn</span></a>
+            </div>
+            <p>&copy;2030 All Rights Reserved. </p>
+        </footer>
+    </main>
+</body>
+
+</html>

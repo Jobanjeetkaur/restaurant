@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home :: Restaurant</title>
+
+    <meta name="Description" content="A wonderful beauty site built for Code The Web 2. Visit us in store or online">
+
+    <meta name="Keywords" content="Breakfast, lunch, dinner, Yummy meals">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.png">
+
+    <!-- RESET -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- SITE STYLES -->
+    <link rel="stylesheet" href="css/restaurant-styles.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+
+
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- FLEXSLIDER CSS AND JS -->
+
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <script src="js/jquery.flexslider.js"></script>
+    <!-- SLICKNAV - CSS + JS -->
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery.slicknav.js"></script>
+
+
+    <!-- HOOKUP -->
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                slideshowSpeed: 3000,
+                randomize: true
+
+            }); //END FLEXSLIDER
+        }); //END WINDOW
+
+    </script>
+
+    <!-- HOOKUP - TESTIMONIALS -->
+    <script>
+        $(window).load(function() {
+            $('.flextestimonials').flexslider({
+                slideshowSpeed: 10000
+            });
+        });
+
+    </script>
+
+
+    <!-- SLICKNAV HOOKUP -->
+    <script>
+        $(function() {
+            $('#menu').slicknav({
+                label: "",
+                closeOnClick: true
+
+
+            });
+        });
+
+    </script>
+
+    <!-- SUPERFISH DROPDOWN MENUS -->
+    <link href="css/superfish.css" rel="stylesheet">
+    <script src="js/superfish.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('ul.sf-menu').superfish({
+                delay: 1000,
+                animation: {
+                    opacity: 'show',
+                    height: 'show'
+                },
+                speed: 'fast',
+                autoArrows: false
+            });
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            $('#menu').slicknav({
+                label: '',
+                prependTo: 'nav'
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <main>
+
+        <nav id="nav">
+            <ul class="sf-menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html"> Events</a>
+                    <ul>
+                        <li><a href="#wedding">Wedding</a>
+                            <ul>
+                                <li><a href="event.html">30 people</a></li>
+                                <li><a href="#">50 people</a></li>
+                                <li><a href="#">75 people</a></li>
+                                <li><a href="#">100 people</a></li>
+                                <li><a href="#">120 people</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#corporate">Corporate Events</a>
+                            <ul>
+                                <li><a href="event.html">30 people</a></li>
+                                <li><a href="#">50 people</a></li>
+                                <li><a href="#">75 people</a></li>
+                                <li><a href="#">100 people</a></li>
+                                <li><a href="#">120 people</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#birthday">Birthday Parties</a>
+                            <ul>
+                                <li><a href="event.html">30 people</a></li>
+                                <li><a href="#">50 people</a></li>
+                                <li><a href="#">75 people</a></li>
+                                <li><a href="#">100 people</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="menu.html">Menu</a>
+                    <ul>
+                        <li><a href="menu.html">Street Food</a></li>
+                        <li><a href="#appetizer">Appetizer</a></li>
+                        <li><a href="#mainCourse">Main Course</a></li>
+                        <li><a href="#dessert">Dessert</a></li>
+                        <li><a href="#">Non Veg</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+
+                    <li><a href="#tour">Tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="current">Contact</a>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#map">Find Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <!-- ==== HEADER==== -->
+        <header id="header">
+
+            <section id="mainHeader" class="hero2">
+                <!-- LOGO -->
+                <img src="images/logo.jpg" class="logo" alt="logo">
+                <h1>Welcome to Yum Yum</h1>
+                <p>A taste you will remember</p>
+                <br>
+                <a href="#header" id="button">ORDER ONLINE</a>
+            </section>
+        </header>
+
+
+
+        <!--  FORUM  -->
+        <section id="contact" class="centered container">
+            <h2>Contact Us</h2>
+            <div class="row gap20">
+                <section class="col12">
+                    <form action="form.php" method="post" enctype="multipart/form-data" id="form">
+
+                        <input name="name" required="required" placeholder="Your Name">
+
+                        <input name="email" type="email" required="required" placeholder="Your Email">
+
+                        <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
+
+                        <input class="button" id="submit" name="submit" type="submit" value="Submit">
+
+                    </form>
+                </section>
+
+                <section id="subContact" class="col12 left">
+
+                    <p><i class="fa-solid fa-location-dot"></i>123 steels Avenue &#44; Toronto &#44; Ontario &#44; L1K 2E8</p>
+
+                    <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:info@uniquebeauty.com" target="_blank">info@uniquebeauty.com</a></p>
+
+                    <p><i class="fa-solid fa-phone"></i>Phone: <a href="tel:4162232121">(416) 223-2121</a></p>
+                </section>
+            </div>
+        </section>
+
+        <!-- MAP -->
+        <section id="map" class="container">
+            <h2>Find Us</h2>
+            <section class="embed-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11549.011790916975!2d-79.3846505302246!3d43.64290539999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2bebb9aaff%3A0x6ce8ef133aecd4f!2s12%20Yonge%20St%2C%20Toronto%2C%20ON%20M5E%201Z9!5e0!3m2!1sen!2sca!4v1670632894742!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+
+        <!--  FOOTER  -->
+        <footer id="footer">
+            <!--  SOCIAL ICONS  -->
+            <div class="social-icons shadow">
+                <a href="#"><i class="fab fa-facebook-f circle"></i> <span class="position">Facebook</span></a>
+                <a href="#"><i class="fab fa-twitter circle"></i> <span class="position">Twitter</span></a>
+                <a href="#"><i class="fab fa-google-plus-g circle"></i> <span class="position">Google+</span>
+                </a> <a href="#"> <i class="fab fa-linkedin-in circle"></i> <span class="position">LinkedIn</span></a>
+            </div>
+            <p>&copy;2030 All Rights Reserved. </p>
+
+
+
+        </footer>
+    </main>
+</body>
+
+</html>

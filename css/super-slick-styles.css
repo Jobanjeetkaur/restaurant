@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/************************************GLOBAL*/
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background:url(../images/bg-site.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+
+img {
+	width:100%;
+	height:auto;
+}
+
+
+/**************************************LAYOUT*/
+/*
+#container {
+	max-width: 1440px;
+	min-width: 481px;
+	width:80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom:20px;
+}
+*/
+
+/*
+#header {
+	background-image:url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	height: 80px;
+}
+*/
+
+/*
+#nav {
+
+}
+
+#feature h1{
+	font-size:400%;
+	padding-top:180px;
+	padding-bottom: 20px;
+	clear:both;
+}
+#feature h1, #feature h2 {
+	text-shadow: 0 0 3px #5c9ad0; 
+}
+
+#feature, #footer {
+	text-align: center;
+	color:#FFF;
+}
+
+#footer {
+	height:50px;
+	line-height: 50px;
+	position:fixed;
+	left:0;
+	bottom:0;
+	width: 100%;
+	text-shadow: 2px 2px 2px #000;
+}
+*/
+
+
+/**********************************OVERRIDES*/
+/*SUPERFISH DROPDOWN MENUS*/
+.sf-menu {
+	float:right;
+}
+.sf-menu a {
+	border:none;
+}
+.sf-menu ul {
+	box-shadow:none;
+}
+.sf-menu li, .sf-menu li ul li {
+	background:none;
+}
+.sf-menu li ul li {
+		border-bottom:1px dashed rgba(255,255,255,0.30);
+
+}
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	background-color: rgba(255,255,255,0.10);
+}
+
+/*SLICKNAV - HAMBURGER MENUS*/
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+}
+
+/*ADDITIONAL SLICKNAV*/
+.slicknav_menu {
+	background: none;
+}
+.slicknav_btn {
+	background: none;
+}
+.slicknav_nav {
+	width:75%;
+	float:right;
+}
+.slicknav_nav li ul li ul li{
+	border-bottom:1px dashed rgba(255,255,255,0.30);
+}
+.slicknav_nav li ul li ul li a {
+	color:#000;
+}
+.slicknav_nav a:hover {
+	background-color: rgba(255,255,255,0.10);
+	
+}
+
+.slicknav_nav .slicknav_row:hover {
+     
+      background: rgba(255,255,255,0.10);
+      color: #000; }
+
+/***********************MEDIA QUERIES******/
+
+@media screen and (max-width:480px) {
+	/*LAYOUT*/
+#container {
+	max-width: 480px;
+	min-width: 320px;
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom:20px;
+}
+#nav  {
+	
+	
+}
+#header {
+	
+}
+
+#feature h1{
+	font-size:400%;
+	padding-top:100px;
+	padding-bottom: 20px;
+	clear:both;
+}
+
+#footer {
+	
+}
+
+}
